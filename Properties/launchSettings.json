@@ -3,6 +3,10 @@
     "Windows Machine": {
       "commandName": "MsixPackage",
       "nativeDebugging": false
+    },
+    "Local Android": {
+      "commandName": "Project",
+      "targetProject": "net10.0-android"
     }
   }
 }
