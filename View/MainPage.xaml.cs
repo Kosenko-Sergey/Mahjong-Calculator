@@ -1,4 +1,4 @@
-﻿namespace Mahjong_Calculator.view;
+﻿namespace Mahjong_Calculator.View;
 
 public partial class MainPage : ContentPage
 {

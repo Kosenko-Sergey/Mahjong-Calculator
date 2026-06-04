@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Mahjong_Calculator"
+             x:Class="Mahjong_Calculator.View.PracticePage"
+             Title="PracticePage">
+    
+    <VerticalStackLayout>
+        <Label 
+            Text="There will be practice mode"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <BlazorWebView x:Name="blazorWebView" HostPage="wwwroot/index.html" IsVisible="True">
+            <BlazorWebView.RootComponents>
+                <RootComponent Selector="#app" ComponentType="{x:Type local:Main}" />
+            </BlazorWebView.RootComponents>
+        </BlazorWebView>
+    </VerticalStackLayout>
+    
+</ContentPage>

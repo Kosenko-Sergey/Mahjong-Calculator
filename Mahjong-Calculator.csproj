@@ -365,6 +365,9 @@
       <MauiXaml Update="AppShell.xaml">
         <Generator>MSBuild:Compile</Generator>
       </MauiXaml>
+      <MauiXaml Update="View\PracticePage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </MauiXaml>
     </ItemGroup>
 
     <ItemGroup>
