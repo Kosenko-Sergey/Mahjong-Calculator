@@ -15,10 +15,14 @@
             </Style>
 
             <Style TargetType="Button">
-                <Setter Property="TextColor" Value="{DynamicResource PrimaryTextColor}" />
+                <Setter Property="TextColor" Value="White" />
                 <Setter Property="FontFamily" Value="OpenSansRegular" />
                 <Setter Property="BackgroundColor" Value="#2b0b98" />
                 <Setter Property="Padding" Value="14,10" />
+            </Style>
+
+            <Style TargetType="Border">
+                <Setter Property="StrokeShape" Value="RoundRectangle, 5"></Setter>
             </Style>
 
         </ResourceDictionary>

@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Mahjong_Calculator"
+            xmlns:data="clr-namespace:Mahjong_Calculator.Data"
+             x:Class="Mahjong_Calculator.view.MainPage"
+             FlowDirection="LeftToRight">
+
+    <ScrollView>
+        <VerticalStackLayout BackgroundColor="#ffffff" Padding="5, 0" >
+            <Label Text="Открыто:"></Label>
+            <Border BackgroundColor="#dde" Padding="0" >
+                <FlexLayout Padding="0" HorizontalOptions="Center" VerticalOptions="Center" Wrap="Wrap" JustifyContent="Center">
+
+                    <HorizontalStackLayout HorizontalOptions="Center" Padding="15, 5, 10, 5" MaximumWidthRequest="155">
+                        <BindableLayout.ItemsSource>
+                            <x:Array Type="{x:Type data:Tile}">
+                                <data:Tile Name="1" TileBG="greentile02.svg" TileFG="bamboo01.svg"></data:Tile>
+                                <data:Tile Name="1" TileBG="greentile02.svg" TileFG="dragon01.svg"></data:Tile>
+                                <data:Tile Name="3" TileBG="greentile02.svg" TileFG="dragon02.svg" ></data:Tile>
+                                <data:Tile Name="4" TileBG="greentile02.svg" TileFG="dragon03.svg" ></data:Tile>
+                            </x:Array>
+                        </BindableLayout.ItemsSource>
+                        <BindableLayout.ItemTemplate>
+                            <DataTemplate x:DataType="data:Tile">
+                                <AbsoluteLayout Margin="-5, 0, 0, 0" Rotation="180" RotationY="180" >
+                                    <Image Source="{Binding TileBG}" HeightRequest="48" Rotation="180" RotationY="180" AnchorX="0" AnchorY="0">
+                                        <Image.Shadow>
+                                            <Shadow Brush="Black" Offset="2, -1" Radius="5" Opacity="0.4"/>
+                                        </Image.Shadow>
+                                    </Image>
+                                    <Image Source="{Binding TileFG}" HeightRequest="40" Rotation="180" RotationY="180" AnchorX="0" AnchorY="0">
+                                        <Image.Shadow>
+                                            <Shadow Brush="#330" Offset="0.5, -0.5" Radius="1" Opacity="0.5"/>
+                                        </Image.Shadow>
+                                    </Image>
+                                </AbsoluteLayout>
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout HorizontalOptions="Center" Padding="15, 5, 10, 5" MaximumWidthRequest="155">
+                        <BindableLayout.ItemsSource>
+                            <x:Array Type="{x:Type data:Tile}">
+                                <data:Tile Name="1" TileBG="greentile02.svg" TileFG="wind01.svg"></data:Tile>
+                                <data:Tile Name="1" TileBG="greentile02.svg" TileFG="wind02.svg"></data:Tile>
+                                <data:Tile Name="3" TileBG="greentile02.svg" TileFG="wind03.svg" ></data:Tile>
+                                <data:Tile Name="4" TileBG="greentile02.svg" TileFG="wind04.svg" ></data:Tile>
+                            </x:Array>
+                        </BindableLayout.ItemsSource>
+                        <BindableLayout.ItemTemplate>
+                            <DataTemplate x:DataType="data:Tile">
+                                <AbsoluteLayout Margin="-5, 0, 0, 0" Rotation="180" RotationY="180" >
+                                    <Image Source="{Binding TileBG}" HeightRequest="48" Rotation="180" RotationY="180" AnchorX="0" AnchorY="0">
+                                        <Image.Shadow>
+                                            <Shadow Brush="Black" Offset="2, -1" Radius="5" Opacity="0.4"/>
+                                        </Image.Shadow>
+                                    </Image>
+                                    <Image Source="{Binding TileFG}" HeightRequest="40" Rotation="180" RotationY="180" AnchorX="0" AnchorY="0">
+                                        <Image.Shadow>
+                                            <Shadow Brush="#330" Offset="0.5, -0.5" Radius="1" Opacity="0.5"/>
+                                        </Image.Shadow>
+                                    </Image>
+                                </AbsoluteLayout>
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout HorizontalOptions="Center" Padding="15, 5, 10, 5" MaximumWidthRequest="155">
+                        <BindableLayout.ItemsSource>
+                            <x:Array Type="{x:Type data:Tile}">
+                                <data:Tile Name="1" TileBG="greentile02.svg" TileFG="dot01.svg"></data:Tile>
+                                <data:Tile Name="1" TileBG="greentile02.svg" TileFG="dot02.svg"></data:Tile>
+                                <data:Tile Name="3" TileBG="greentile02.svg" TileFG="dot03.svg" ></data:Tile>
+                                <data:Tile Name="4" TileBG="greentile02.svg" TileFG="dot04.svg" ></data:Tile>
+                            </x:Array>
+                        </BindableLayout.ItemsSource>
+                        <BindableLayout.ItemTemplate>
+                            <DataTemplate x:DataType="data:Tile">
+                                <AbsoluteLayout Margin="-5, 0, 0, 0" Rotation="180" RotationY="180" >
+                                    <Image Source="{Binding TileBG}" HeightRequest="48" Rotation="180" RotationY="180" AnchorX="0" AnchorY="0">
+                                        <Image.Shadow>
+                                            <Shadow Brush="Black" Offset="2, -1" Radius="5" Opacity="0.4"/>
+                                        </Image.Shadow>
+                                    </Image>
+                                    <Image Source="{Binding TileFG}" HeightRequest="40" Rotation="180" RotationY="180" AnchorX="0" AnchorY="0">
+                                        <Image.Shadow>
+                                            <Shadow Brush="#330" Offset="0.5, -0.5" Radius="1" Opacity="0.5"/>
+                                        </Image.Shadow>
+                                    </Image>
+                                </AbsoluteLayout>
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
+                    </HorizontalStackLayout>
+
+                </FlexLayout>
+            </Border>
+            <Label Text="Закрыто:"></Label>
+
+
+            <Border BackgroundColor="#dde" Padding="0" Margin="0, 0, 0, 5">
+                <FlexLayout Padding="0" HorizontalOptions="Center" VerticalOptions="Center" Wrap="Wrap" JustifyContent="Center">
+
+                    <HorizontalStackLayout HorizontalOptions="Center" Padding="15, 5, 10, 5" MaximumWidthRequest="155">
+                        <BindableLayout.ItemsSource>
+                            <x:Array Type="{x:Type data:Tile}">
+                                <data:Tile Name="1" TileBG="greentile02.svg" TileFG="character01.svg"></data:Tile>
+                                <data:Tile Name="1" TileBG="greentile02.svg" TileFG="character02.svg"></data:Tile>
+                                <data:Tile Name="3" TileBG="greentile02.svg" TileFG="character03.svg" ></data:Tile>
+                                <data:Tile Name="4" TileBG="greentile02.svg" TileFG="character04.svg" ></data:Tile>
+                            </x:Array>
+                        </BindableLayout.ItemsSource>
+                        <BindableLayout.ItemTemplate>
+                            <DataTemplate x:DataType="data:Tile">
+                                <AbsoluteLayout Margin="-5, 0, 0, 0" Rotation="180" RotationY="180" >
+                                    <Image Source="{Binding TileBG}" HeightRequest="48" Rotation="180" RotationY="180" AnchorX="0" AnchorY="0">
+                                        <Image.Shadow>
+                                            <Shadow Brush="Black" Offset="2, -1" Radius="5" Opacity="0.4"/>
+                                        </Image.Shadow>
+                                    </Image>
+                                    <Image Source="{Binding TileFG}" HeightRequest="40" Rotation="180" RotationY="180" AnchorX="0" AnchorY="0">
+                                        <Image.Shadow>
+                                            <Shadow Brush="#330" Offset="0.5, -0.5" Radius="1" Opacity="0.5"/>
+                                        </Image.Shadow>
+                                    </Image>
+                                </AbsoluteLayout>
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
+                    </HorizontalStackLayout>
+
+                </FlexLayout>
+            </Border>
+
+
+            <Grid ColumnDefinitions="*, Auto">
+
+                <StackLayout Grid.Column="0" VerticalOptions="Center">
+                    <Label Text="Ветер раунда:" HorizontalOptions="Center"></Label>
+                    <Picker Title="Ветер раунда" FontAutoScalingEnabled="True" HorizontalOptions="Fill" HorizontalTextAlignment="Center" >
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Восточный</x:String>
+                                <x:String>Южный</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                        <Picker.SelectedIndex>0</Picker.SelectedIndex>
+                    </Picker>
+
+                    <Label Text="Ветер места:" HorizontalOptions="Center"></Label>
+                    <Picker Title="Ветер места" FontAutoScalingEnabled="True" HorizontalOptions="Fill" HorizontalTextAlignment="Center">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Восточный</x:String>
+                                <x:String>Южный</x:String>
+                                <x:String>Западный</x:String>
+                                <x:String>Северный</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                        <Picker.SelectedIndex>0</Picker.SelectedIndex>
+                    </Picker>
+                </StackLayout>
+
+
+
+                <VerticalStackLayout Grid.Column="1">
+                    <Label Text="Дора:" HorizontalOptions="Center"></Label>
+                    <Border BackgroundColor="#dde" Margin="5, 5, 0, 5">
+                        <VerticalStackLayout>
+                            <VerticalStackLayout>
+                                <HorizontalStackLayout HorizontalOptions="Center" Padding="15, 5, 10, 5" MaximumWidthRequest="195">
+                                    <BindableLayout.ItemsSource>
+                                        <x:Array Type="{x:Type data:Tile}">
+                                            <data:Tile Name="1" TileBG="greentile02.svg" TileFG="bamboo01.svg"></data:Tile>
+                                            <data:Tile Name="1" TileBG="greentile02.svg" TileFG="bamboo02.svg"></data:Tile>
+                                            <data:Tile Name="3" TileBG="greentile02.svg" TileFG="bamboo03.svg" ></data:Tile>
+                                            <data:Tile Name="4" TileBG="greentile02.svg" TileFG="bamboo04.svg" ></data:Tile>
+                                            <data:Tile Name="4" TileBG="greentile02.svg" TileFG="bamboo05.svg" ></data:Tile>
+                                        </x:Array>
+                                    </BindableLayout.ItemsSource>
+                                    <BindableLayout.ItemTemplate>
+                                        <DataTemplate x:DataType="data:Tile">
+                                            <AbsoluteLayout Margin="-5, 0, 0, 0" Rotation="180" RotationY="180" >
+                                                <Image Source="{Binding TileBG}" HeightRequest="48" Rotation="180" RotationY="180" AnchorX="0" AnchorY="0">
+                                                    <Image.Shadow>
+                                                        <Shadow Brush="Black" Offset="2, -1" Radius="5" Opacity="0.4"/>
+                                                    </Image.Shadow>
+                                                </Image>
+                                                <Image Source="{Binding TileFG}" HeightRequest="40" Rotation="180" RotationY="180" AnchorX="0" AnchorY="0">
+                                                    <Image.Shadow>
+                                                        <Shadow Brush="#330" Offset="0.5, -0.5" Radius="1" Opacity="0.5"/>
+                                                    </Image.Shadow>
+                                                </Image>
+                                            </AbsoluteLayout>
+                                        </DataTemplate>
+                                    </BindableLayout.ItemTemplate>
+                                </HorizontalStackLayout>
+                            </VerticalStackLayout>
+
+                            <VerticalStackLayout>
+                                <HorizontalStackLayout HorizontalOptions="Center" Padding="15, 5, 10, 5" MaximumWidthRequest="195">
+                                    <BindableLayout.ItemsSource>
+                                        <x:Array Type="{x:Type data:Tile}">
+                                            <data:Tile Name="1" TileBG="greentile02.svg" TileFG="character05.svg"></data:Tile>
+                                            <data:Tile Name="1" TileBG="greentile02.svg" TileFG="character06.svg"></data:Tile>
+                                            <data:Tile Name="3" TileBG="greentile02.svg" TileFG="character07.svg" ></data:Tile>
+                                            <data:Tile Name="4" TileBG="greentile02.svg" TileFG="character08.svg" ></data:Tile>
+                                            <data:Tile Name="4" TileBG="greentile02.svg" TileFG="character09.svg" ></data:Tile>
+                                        </x:Array>
+                                    </BindableLayout.ItemsSource>
+                                    <BindableLayout.ItemTemplate>
+                                        <DataTemplate x:DataType="data:Tile">
+                                            <AbsoluteLayout Margin="-5, 0, 0, 0" Rotation="180" RotationY="180" >
+                                                <Image Source="{Binding TileBG}" HeightRequest="48" Rotation="180" RotationY="180" AnchorX="0" AnchorY="0">
+                                                    <Image.Shadow>
+                                                        <Shadow Brush="Black" Offset="2, -1" Radius="5" Opacity="0.4"/>
+                                                    </Image.Shadow>
+                                                </Image>
+                                                <Image Source="{Binding TileFG}" HeightRequest="40" Rotation="180" RotationY="180" AnchorX="0" AnchorY="0">
+                                                    <Image.Shadow>
+                                                        <Shadow Brush="#330" Offset="0.5, -0.5" Radius="1" Opacity="0.5"/>
+                                                    </Image.Shadow>
+                                                </Image>
+                                            </AbsoluteLayout>
+                                        </DataTemplate>
+                                    </BindableLayout.ItemTemplate>
+                                </HorizontalStackLayout>
+                            </VerticalStackLayout>
+                        </VerticalStackLayout>
+                    </Border>
+                </VerticalStackLayout>
+
+
+            </Grid>
+        
+        
+            <Label Text="Яку-ситуации:" HorizontalOptions="Start"></Label>
+            <Border BackgroundColor="#eee" Margin="0, 5, 5, 5" StrokeShape="RoundRectangle 10" IsVisible="Collapse">
+                <Grid RowDefinitions="*, *, *, *, *, *" HeightRequest="200" Padding="5" Margin="0" ColumnSpacing="5" RowSpacing="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <CheckBox Grid.Column="0" Grid.Row="0" ></CheckBox>
+                    <CheckBox Grid.Column="0" Grid.Row="1"></CheckBox>
+                    <CheckBox Grid.Column="0" Grid.Row="2"></CheckBox>
+                    <CheckBox Grid.Column="0" Grid.Row="3"></CheckBox>
+                    <CheckBox Grid.Column="0" Grid.Row="4"></CheckBox>
+                    <CheckBox Grid.Column="0" Grid.Row="5"></CheckBox>
+
+                    <CheckBox Grid.Column="2" Grid.Row="0"></CheckBox>
+                    <CheckBox Grid.Column="2" Grid.Row="1"></CheckBox>
+                    <CheckBox Grid.Column="2" Grid.Row="2"></CheckBox>
+                    <CheckBox Grid.Column="2" Grid.Row="3"></CheckBox>
+                    <CheckBox Grid.Column="2" Grid.Row="4"></CheckBox>
+                    <CheckBox Grid.Column="2" Grid.Row="5"></CheckBox>
+
+                    <Label Grid.Column="1" Grid.Row="0" Text="Риичи"></Label>
+                    <Label Grid.Column="1" Grid.Row="1" Text="Иппацу"></Label>
+                    <Label Grid.Column="1" Grid.Row="2" Text="Мензен цумо"></Label>
+                    <Label Grid.Column="1" Grid.Row="3" Text="Хайтэй раоюэ"></Label>
+                    <Label Grid.Column="1" Grid.Row="4" Text="Хотэй раоюй"></Label>
+                    <Label Grid.Column="1" Grid.Row="5" Text="Ринщан кайхо"></Label>
+
+                    <Label Grid.Column="3" Grid.Row="0" Text="Чанкан"></Label>
+                    <Label Grid.Column="3" Grid.Row="1" Text="Дабури"></Label>
+                    <Label Grid.Column="3" Grid.Row="2" Text="Тенхо"></Label>
+                    <Label Grid.Column="3" Grid.Row="3" Text="Чихо"></Label>
+                    <Label Grid.Column="3" Grid.Row="4" Text="Ренхо"></Label>
+                    <Label Grid.Column="3" Grid.Row="5" Text="Нагащи манган"></Label>
+                </Grid>
+            </Border>
+
+            <Grid ColumnDefinitions="Auto, *">
+                <Label Text="Ожидание:" Grid.Column="0" VerticalTextAlignment="Center"></Label>
+                <Picker Title="Ожидание" Grid.Column="1">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>какое-то, хз какое</x:String>
+                            <x:String>в дырку</x:String>
+                            <x:String>в пару</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                    <Picker.SelectedIndex>0</Picker.SelectedIndex>
+                </Picker>
+            </Grid>
+
+            <FlexLayout >
+                <Button FlexLayout.Grow="1" Text="Посчитать" FontSize="Medium"></Button>
+            </FlexLayout>
+
+            <BlazorWebView x:Name="blazorWebView" HostPage="wwwroot/index.html" IsVisible="False">
+                <BlazorWebView.RootComponents>
+                    <RootComponent Selector="#app" ComponentType="{x:Type local:Main}" />
+                </BlazorWebView.RootComponents>
+            </BlazorWebView>
+
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>
+    
+
