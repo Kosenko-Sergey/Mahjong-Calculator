@@ -5,9 +5,24 @@
              x:Class="Mahjong_Calculator.App">
     <Application.Resources>
         <ResourceDictionary>
+            <x:Array x:Key="Dora" Type="{x:Type x:String}">
+                <x:String>character05.svg</x:String>
+                <x:String>character05.svg</x:String>
+                <x:String>character05.svg</x:String>
+                <x:String>character05.svg</x:String>
+                <x:String>character05.svg</x:String>
+            </x:Array>
+
+            <x:Array x:Key="Kang" Type="{x:Type x:String}">
+                <x:String>wind01</x:String>
+                <x:String>wind01</x:String>
+                <x:String>wind01</x:String>
+                <x:String>wind01</x:String>
+            </x:Array>
 
             <Color x:Key="PageBackgroundColor">#512bdf</Color>
             <Color x:Key="PrimaryTextColor">Black</Color>
+            <x:String x:Key="TileBody">greentile02.svg</x:String>
 
             <Style TargetType="Label">
                 <Setter Property="TextColor" Value="{DynamicResource PrimaryTextColor}" />

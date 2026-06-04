@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<StackLayout xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:data="clr-namespace:Mahjong_Calculator.Data"
+             x:Class="Mahjong_Calculator.View.MeldView"
+             Orientation="Horizontal"
+             VerticalOptions="Start"
+             HorizontalOptions="Center"
+             Padding="15, 5, 10, 5">
+
+    
+    <BindableLayout.ItemTemplate>
+        <DataTemplate x:DataType="x:String">
+            <AbsoluteLayout Margin="-5, 0, 0, 0" Rotation="180" RotationY="180">
+                <Image Source="{StaticResource TileBody}" HeightRequest="48" Rotation="180" RotationY="180" AnchorX="0" AnchorY="0">
+                    <Image.Shadow>
+                        <Shadow Brush="Black" Offset="2, -1" Radius="5" Opacity="0.4"/>
+                    </Image.Shadow>
+                </Image>
+                <Image Source="{Binding .}" HeightRequest="40" Rotation="180" RotationY="180" AnchorX="0" AnchorY="0">
+                    <Image.Shadow>
+                        <Shadow Brush="#330" Offset="0.5, -0.5" Radius="1" Opacity="0.5"/>
+                    </Image.Shadow>
+                </Image>
+            </AbsoluteLayout>
+        </DataTemplate>
+    </BindableLayout.ItemTemplate>
+
+</StackLayout>
